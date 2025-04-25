@@ -18,7 +18,7 @@ export default function URLChecker() {
     setReasons([]);
     setError(null);
     try {
-      const response = await axios.post("https://linksafe-app-backend.onrender.com", { url });
+      const response = await axios.post("https://linksafe-app-backend.onrender.com/predict", { url });
       setResult(response.data.prediction);
       setConfidence(response.data.confidence);
       setCategory(response.data.category);
