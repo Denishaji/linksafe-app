@@ -15,6 +15,9 @@ with open("models/random_forest.pkl", "rb") as model_file:
 
 app = Flask(__name__)
 CORS(app)
+@app.route("/", methods=["GET"])
+def home():
+    return "✅ LinkSafe Flask backend is running!"
 
 @app.route('/predict', methods=['POST'])
 def predict_url():
