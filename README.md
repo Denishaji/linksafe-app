@@ -1,36 +1,62 @@
-Link Safe – URL Safety Checker
-Detect Malicious URLs Using Machine Learning
+# 🔒 LinkSafe – AI-Powered URL Safety Checker
 
-Link Safe is a machine learning-powered web application that determines whether a given URL is safe or malicious. It helps users identify potential phishing, malware, or scam websites before visiting them.
+LinkSafe is a full-stack web application designed to detect whether a given URL is safe or malicious.  
+The app combines a machine learning model (Random Forest Classifier) and heuristic rules to predict URL safety with high confidence.
 
-Key Features
-✅ Machine Learning-Based URL Analysis – Predicts whether a URL is safe or harmful.
-✅ Flask Backend – Handles URL processing and ML model predictions.
-✅ React Frontend – Provides an intuitive and responsive user interface.
-✅ Real-Time Detection – Get instant results when testing a URL.
-✅ Security Insights – Provides reasons for classification (if applicable).
+---
 
-Tech Stack
-Frontend: React.js
+## 🚀 Live Application
 
-Backend: Flask (Python)
+- 🌐 **Frontend (React.js)**: [https://linksafe-app-backend.onrender.com](https://linksafe-app-backend.onrender.com)
+- 🛠️ **Backend (Flask API)**: [https://linksafe-app-frontend.onrender.com](https://linksafe-app-frontend.onrender.com)
 
-Machine Learning: Scikit-learn/Random-forest
 
-Database: MySQL
+---
 
-How It Works
-User enters a URL into the search bar.
+## ✨ Features
 
-The backend processes the URL and runs it through a trained ML model.
+- 🔎 Real-time URL safety prediction
+- 📊 Confidence score display
+- 🛡️ Detection reasons (e.g., suspicious keywords, shady domains)
+- 🖥️ Responsive design (Bootstrap 5)
+- 🌐 Hosted online using Render.com
+- 📦 Organized codebase for easy deployment and scaling
 
-The system classifies the URL as Safe or Malicious.
+---
 
-(Optional) Additional details like threat type are displayed.
+## 🛠️ Tech Stack
 
-Usage
-Protect yourself from phishing attacks.
+| Frontend               | Backend             | Machine Learning | Deployment      |
+|:------------------------|:--------------------|:-----------------|:----------------|
+| React.js (Vite)          | Python (Flask)       | Random Forest (Scikit-Learn) | Render.com |
+| Bootstrap 5             | Flask-CORS           | Feature Extraction Techniques | GitHub |
 
-Verify links before clicking.
+---
 
-Integrate into browser extensions or security tools.
+## 📂 Folder Structure
+
+```plaintext
+linksafe-app/
+├── backend/                    
+│   ├── app.py                   # Main Flask backend application
+│   ├── models/                  # Trained Random Forest model (.pkl file)
+│   ├── notebooks/               # Feature extraction scripts
+│   │    └── Feature_Extraction.py
+│   ├── requirements.txt         # Python backend dependencies
+│   └── Procfile                 # Render deployment configuration
+│
+├── frontend/                   
+│   ├── public/                  # Static assets
+│   ├── src/                     # React.js source code
+│   │    ├── App.jsx             # Main App component
+│   │    ├── main.jsx            # React entry point
+│   │    ├── URLChecker.jsx      # URL Checker component (API calls)
+│   │    └── index.css           # Styling and design
+│   ├── package.json             # React project dependencies
+│   └── vite.config.js           # Vite bundler configuration
+│
+└── README.md                    # Project documentation
+
+
+
+
