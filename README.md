@@ -32,7 +32,16 @@ The app combines a machine learning model (Random Forest Classifier) and heurist
 | Bootstrap 5             | Flask-CORS           | Feature Extraction Techniques | GitHub |
 
 ---
+## ✅ Safe URL Example
 
+![Safe URL Detection](./safe_url_result.png)
+
+- URL Entered: `https://aes.ibomma.boo/`
+- Result: This URL is Safe
+- Confidence: 100%
+- Category: General
+
+---
 ## 📂 Folder Structure
 
 ```plaintext
@@ -56,6 +65,7 @@ linksafe-app/
 │   └── vite.config.js           # Vite bundler configuration
 │
 └── README.md                    # Project documentation
+
 
 
 
