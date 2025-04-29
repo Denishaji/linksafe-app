@@ -42,6 +42,17 @@ The app combines a machine learning model (Random Forest Classifier) and heurist
 - Category: General
 
 ---
+## ⚠️ Malicious URL Example
+
+![Malicious URL Detection](./malicious_url_result.png)
+
+- URL Entered: `http://paypal-login-verification.tk`
+- Result: Malicious URL Detected!
+- Confidence: 80%
+- Category: Login Page
+- Reasons:
+  - Contains 'login'
+  - Suspicious domain extension
 ## 📂 Folder Structure
 
 ```plaintext
